@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Produtos - Encanto Manual</title>
+
+</head>
+<body>
+<!-- ------ CABEÇALHO ------ -->
+    <header>
+        <div class="logo">
+            <h1>Encanto <span>Manual</span></h1>
+        </div>
+        <div class="search">
+            <label for="searchInput">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </label>
+            <input type="text" id="searchInput" placeholder="Pesquisar">
+        </div>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produto001.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="login.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+<!------------ PRODUTOS EM DESTAQUE ---------->
+<div class="small-container">
+
+    <div class="row row-2">
+        <h2>Todos os Produtos</h2>
+        <select id="meuSelect" onchange="redirecionarPagina()">
+            <option>Todos os Produtos</option>
+            <option value="produto-decoracao.html">Decoração</option>
+            <option value="produto-acessorio.html">Acessórios</option>
+        </select>
+    </div>
+    
+    <div class="row">
+        <div class="col-4">
+            <a href="detalhe001.html"><img src="img/item-4.jpg"></a>
+            <h4>Tapete de Crochê Sisal</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$350,00</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe002.html"><img src="img/item-5.webp"></a>
+            <h4>Cascata Decorativa</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$145,00</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe003.html"><img src="img/item-6.jpg"></a>
+            <h4>Escultura em Madeira</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$550,90</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe004.html"><img src="img/item-7.jpg"></a>
+            <h4>Kit Safari Amigurumi</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$390,90</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe005.html"><img src="img/item-8.webp"></a>
+            <h4>Peso de Porta</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$19,90</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe006.html"><img src="img/item-9.webp"></a>
+            <h4>Vaso de Resina</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$24,90</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe007.html"><img src="img/item-10.jpg"></a>
+            <h4>Filtro de Barro</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$299,90</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe008.html"><img src="img/item-11.jpg"></a>
+            <h4>Prateleira de Madeira Rústica</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$159,90</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe009.html"><img src="img/item-12.jpg"></a>
+            <h4>Jogo Americano</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$35,00</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe010.html"><img src="img/item-13.jpg"></a>
+            <h4>Manta de Sofá</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$340,90</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe011.html"><img src="img/item-14.jpg"></a>
+            <h4>Tapete de Cozinha</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$80,00</p>
+        </div>
+        <div class="col-4">
+            <a href="detalhe012.html"><img src="img/item-2.webp"></a>
+            <h4>Colar de Mesa</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$135,00</p>
+        </div>
+    </div>
+    
+
+    <div class="page-btn">
+        <span><a href="#"></a>1</span>
+        <span><a href="produto002.html">2</a></span>
+    </div>
+</div>
+<!-- Rodapé -->
+<div class="footer">
+    <div class="row">
+        <div class="footer-col-1">
+            <img src="" alt="">
+            <p>© 2024 Encanto Manual. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</div>
+
+    <script src="https://kit.fontawesome.com/b0d4af56fd.js"></script>
+
+    <!-- Função select para categoria de Produtos  -->
+    <script src="js/funcaoSelect.js"></script>
+
+    <!-- Menu Mobile -->
+    <script src="js/MenuToggle.js"></script>
+</body>
+</html>

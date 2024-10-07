@@ -1,0 +1,109 @@
+/* Container de formulário */
+.cadastro-container, .login-container {
+    max-width: 400px;
+    margin: 80px auto 80px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título dos formulários */
+.cadastro-container h2, .login-container h2 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Grupos de entrada */
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+/* Estilo de foco nos campos de input */
+.input-group input:focus {
+    border-color: #ff523b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 82, 59, 0.2);
+}
+
+/* Estilo para campos de checkbox */
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; 
+}
+
+.checkbox-group input {
+    margin-right: 5px; 
+}
+
+/* Estilo para os botões */
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between; 
+}
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px; 
+}
+
+.btn-confirmar, .btn-limpar {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out, transform 0.2s ease-in-out;
+    background-color: #ff523b;
+    color: #fff;
+    flex: 1;
+}
+
+.btn-confirmar:hover, .btn-limpar:hover {
+    background-color: #000;
+    transform: scale(1.05); 
+}
+
+.btn-confirmar:active, .btn-limpar:active {
+    transform: scale(0.98); 
+    background-color: #222; 
+}
+
+/* Link para cadastro */
+.input-group p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.input-group p a {
+    color: #ff523b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.input-group p a:hover {
+    color: #e0472f;
+}

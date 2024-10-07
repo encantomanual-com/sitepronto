@@ -1,0 +1,152 @@
+/* Container do formulário */
+.cadastro-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Título do formulário */
+.cadastro-container h2 {
+    text-align: center;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+/* Grupos de entrada */
+.input-group {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 10px;
+}
+
+/* Rótulos */
+.input-group label {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Campos de entrada */
+.input-group input {
+    width: 95%;  
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* largura da caixa  de sexo*/
+#sexo {
+    width: 250px; 
+}
+
+/* Estilo para caixa de seleção */
+
+
+.checkbox-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; 
+}
+
+checkbox-group{
+
+    margin-right: 5px; 
+}
+/* Estilo para os botões */
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between; 
+}
+
+.btn-limpar {
+    width: 45%; 
+    padding: 10px;
+    background-color: #ff523b; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Botão Confirmar Cadastro */
+.btn-confirmar {
+    width: 45%; 
+    padding: 10px;
+    background-color: #ff523b; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Efeito hover nos botões */
+.btn-limpar:hover,
+.btn-confirmar:hover {
+    background-color: black; 
+}
+
+/* Ajustes gerais para telas menores */
+@media (max-width: 768px) {
+    /* Container do formulário */
+    .cadastro-container {
+        width: 90%; 
+        margin-top: 80px;
+        padding: 15px;
+    }
+
+    /* Fontes menores para títulos e rótulos */
+    .cadastro-container h2 {
+        font-size: 1.5em;
+    }
+
+    .input-group label {
+        font-size: 13px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Botões */
+    .buttons {
+        flex-direction: column; 
+    }
+
+    .btn-confirmar, .btn-limpar {
+        width: 100%; 
+        margin-bottom: 10px; 
+        font-size: 16px;
+    }
+
+    /* Espaço extra para checkbox e termos */
+    .checkbox-group {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .checkbox-group input {
+        margin-bottom: 5px;
+    }
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 1.5em; 
+    }
+
+    .cadastro-container {
+        padding: 10px; 
+    }
+
+    .btn-confirmar, .btn-limpar {
+        font-size: 14px; 
+    }
+}
